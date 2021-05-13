@@ -1,0 +1,287 @@
+/*global*/
+:root{
+    --primary:yellow;
+}
+
+html{
+    font-size: 62.5%; /*rest the html, 1rem equals 16px*/
+    background-color: black;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/*utilities*/
+
+/*menu*/
+nav.menu{
+    display:flex ;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.menu-sub{
+    background-color:black;
+    border: black 2rem solid;
+    border-width: 4rem;
+    color: white;
+    margin-right: 3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.menu-log{
+    font-size: 2rem;
+    margin-right: 3rem;
+    font-weight: 700;
+}
+
+img.logo{
+    height: 5rem;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 40%;
+}
+
+/*header*/
+header.site-header{
+    background-color: black;
+    text-align: center;
+}
+.site-header h1{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    padding-top: 4rem;
+}
+
+.site-header .title-description{
+    color: white;
+    font-size: 1.6rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+span.subs-text{
+    border-bottom: .2rem solid var(--primary);
+}
+
+span.subs-text:hover{
+    background-color: var(--primary);
+    color: black;
+    cursor: pointer;
+    padding: 1px;
+}
+
+@media(min-width:768px){
+    .header-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .news{
+        flex-basis: 60%;
+    }
+}
+
+/*news*/
+.main-news{
+    height: 40rem;
+    width:46rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    background-image: url(../Project/images/img1.png);
+    background-position: top center;
+    background-size: auto;
+    cursor: pointer;
+}
+
+.secondary-news{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondary-news img{
+    height: 25rem;
+    width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: bottom center;
+    background-size:cover;
+    cursor: pointer;
+}
+
+.secondary-img{
+    height: 25rem;
+    width: 46rem;
+    margin-left: 1.3rem;
+    margin-right: auto;
+    background-position: bottom center;
+    background-size:cover;
+    cursor: pointer;
+}
+
+.site-header:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 7%;
+    border-bottom: 4px solid yellow;
+    padding-bottom: 3rem;
+}
+
+.main-news-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    text-align: left;
+    padding: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.main-news-text h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.main-news-text .title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.secondary-news-text{
+    margin-top: -3px;
+    width: 44rem;
+    background-color: white;
+    background-size: 10px 70%;
+    border: 2px solid black;
+    text-align: left;
+    padding: 2rem 1rem;
+    margin: auto;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.secondary-news img:hover{
+    border-bottom: 1rem solid var(--primary);
+}
+
+.secondary-img img:hover{
+    border-bottom: 1rem solid var(--primary);
+}
+
+.secondary-news-text h2{
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.secondary-news-text .title{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+@media(min-width:768px){
+    .main-news{
+        width:70rem;
+        height: 42rem;
+    }
+    .secondary-news{
+        width: 25rem;
+    }
+}
+
+.picks-element{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.picks-element h4{
+    color: white;
+}
+
+.picks-element img{
+    width: 9rem;
+    height: 9rem;
+    cursor: pointer;
+}
+
+.picks-element p{
+    color: white;
+    font-weight:700;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.picks-title{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.picks-title span{
+    color: lightgray;
+    cursor: pointer;
+}
+
+.read-text{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.bot-header{
+    color: white;
+    padding: 4rem;
+    font-size: 3.5rem;
+}
+.bot-header:left{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 4%;
+    border-left: 4px solid yellow;
+    padding-bottom: 3rem;
+}
